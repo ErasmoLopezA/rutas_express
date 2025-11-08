@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RutasExpress Leaflet v2.4.2</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <script defer src="script.js"></script>
+  <link rel="icon" href="assets/icon-192.png" />
+</head>
+<body>
+  <header>
+    <h1>RutasExpress</h1>
+  </header>
+
+  <main>
+    <div id="map"></div>
+
+    <section id="controls">
+      <textarea id="addressInput" placeholder="Dicta o escribe una dirección por renglón..."></textarea>
+      <div class="buttons">
+        <button id="voiceBtn">🎙️ Dictar</button>
+        <button id="saveListBtn">💾 Guardar listado</button>
+        <button id="updateMapBtn">📍 Actualizar mapa</button>
+        <button id="exportBtn">📤 Exportar verificadas</button>
+      </div>
+      <div id="summary">
+        <span id="pendingCount">Pendientes: 0</span> |
+        <span id="verifiedCount">Verificadas: 0</span> |
+        <span id="deliveredCount">Entregadas: 0</span><br />
+        <button id="toggleDeliveredBtn">👁️ Mostrar entregados</button>
+      </div>
+      <ul id="addressList"></ul>
+    </section>
+  </main>
+
+  <div id="notification"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</body>
+</html>
